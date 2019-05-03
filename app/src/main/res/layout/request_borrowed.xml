@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/sarpras"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_8dp">
+            <ImageView
+                android:id="@+id/thumbnailUser"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user100"/>
+            <TextView
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name From Use"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_8dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvDesc"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.8dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/btnApprove"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Approve"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_approve"
+                android:textSize="10sp"
+                android:textColor="#18da0e"
+                android:layout_marginLeft="4dp"/>
+            <Button
+                android:id="@+id/btnDecline"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:text="Decline"
+                android:layout_toLeftOf="@id/btnApprove"
+                android:background="@drawable/btn_decline"
+                android:textSize="10sp"
+                android:textColor="#ca300a"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

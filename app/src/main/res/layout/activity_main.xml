@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamz.sistemsarpras.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <!--menu-->
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                <!--baris satu-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/menu1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/ivCamera1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/camera100"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivCamera1"
+                            android:text="Camera"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.99"
+                        android:background="#B0BEC5"/>
+
+                    <RelativeLayout
+                        android:id="@+id/menu2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/ivCamera2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/list100"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivCamera2"
+                            android:text="List Report"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!--baris dua-->
+                <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.9dp"
+                android:layout_weight="1"
+                android:background="#B0BEC5"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+                <!--baris tiga-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/menu3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/ivCamera3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/users100"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivCamera3"
+                            android:text="User"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1.99"
+                        android:background="#B0BEC5"/>
+
+                    <RelativeLayout
+                        android:id="@+id/menu4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/ivCamera4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/setting100"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivCamera4"
+                            android:text="Projector"
+                            android:textAlignment="center"
+                            android:layout_marginTop="@dimen/padding_16dp"
+                            android:paddingBottom="@dimen/padding_8dp"
+                            android:layout_marginBottom="@dimen/padding_8dp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+                <!--image/logo-->
+                <ImageView
+                    android:id="@+id/sarana"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_16dp"
+                    android:src="@drawable/versi2" />
+
+        </RelativeLayout>
+
+        <!--navigation-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/navigation_menu"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

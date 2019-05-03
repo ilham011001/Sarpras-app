@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamz.sistemsarpras.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardIp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/ivIp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/console24"
+                    android:padding="@dimen/padding_8dp"/>
+                <TextView
+                    android:id="@+id/tvIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Ip Adress"
+                    android:layout_toRightOf="@id/ivIp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_8dp"/>
+                <ImageView
+                    android:id="@+id/rIp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_8dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/circlerow24primary"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardFolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_marginTop="@dimen/padding_16dp">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/ivProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/folder24"
+                    android:padding="@dimen/padding_8dp"/>
+                <TextView
+                    android:id="@+id/tvProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Folder Project"
+                    android:layout_toRightOf="@id/ivProject"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_8dp"/>
+                <ImageView
+                    android:id="@+id/rFolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_8dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/circlerow24primary"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/padding_8dp"
+        android:text="Log Out"
+        android:textColor="@color/textColorWhite"/>
+
+</RelativeLayout>
